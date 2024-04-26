@@ -9,13 +9,13 @@
 body {
     font-family: 'Luckiest Guy', cursive;
     background-color: black;
-    color: #fff;
+    color: black;
     letter-spacing: .1em;
 }
 
 /* Header Styles */
 header {
-    background: #131313;
+    background: black;
     padding: 20px;
     text-align: center;
     /* max-width: 1080px; */
@@ -35,7 +35,7 @@ header h2 {
 
 nav {
     text-align: center;
-    margin: 50px auto;
+    margin: 30px auto;
 }
 
 nav ul {
@@ -53,10 +53,10 @@ nav li {
 
 nav li a {
     display: inline-block;
-    color: whitesmoke;
+    color: #facb7b;
     text-align: center;
     text-decoration: none;
-    border: 1px solid #ddd;
+    border: 1px solid #facb7b;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
     padding: 12px 20px;
@@ -112,7 +112,7 @@ p {
 section h2 {
     font-size: 2em;
     text-align: center;
-    color: #facb7b;
+    /* color: #facb7b; */
     padding: 20px;
 }
 
@@ -123,16 +123,71 @@ section p {
 
 /* Footer Styles */
 footer {
-    background: #131313;
-    padding: 20px;
-    text-align: center;
-    /* max-width: 1080px; */
+    color: whitesmoke;
+    background-color: #1c1c1c; /* Gold background color */
+    padding: 20px 0; /* Adjust padding as needed */
+}
+
+.footer-content {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* flex-wrap: wrap; */
+    max-width: 1080px;
     margin: 0 auto;
 }
 
-footer p {
+.footer-text {
+    flex: 1;
+    max-width: 600px; /* Adjust text width */
+    padding: 50px;
+}
+
+.footer-logo {
+    flex: 1;
+    max-width: 200px; /* Adjust logo width */
+}
+
+.footer-bottom {
+    /* background-color: #ffd700; */ /* Same background color as footer */
+    padding: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-bottom p {
+    text-align: center;
     margin-bottom: 10px;
 }
+
+.footer-links {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.icon-link {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.icon-link:hover {
+    color: #000;
+}
+
 
 .social-media {
     list-style-type: none;
@@ -158,10 +213,6 @@ footer p {
     color: #facb7b;
 }
 
-/* Footer Section Styles */
-#footer {
-    padding: 20px 0;
-}
 
 /* Container Styles */
 .container {
@@ -230,13 +281,15 @@ footer p {
     padding-top: 20px;
     padding-bottom: 50px;
     border-radius: 10px;
-    max-width: 1080px;
+    /* max-width: 1080px; */
     align-items: center;
     margin: 0 auto;
     /* Centers the section itself horizontally */
 }
 
 .about-content {
+    color: whitesmoke;
+    background: black;
     padding: 50px;
 }
 
@@ -247,9 +300,9 @@ footer p {
 .about .container {
     border: 1px solid #eaeaea;
     border-radius: 10px;
-    max-width: 1080px;
+    /* max-width: 1080px; */
     align-items: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .glass-container {
@@ -266,12 +319,12 @@ footer p {
 
 /* CSS */
 img {
-    max-width: 50%;
+    /* max-width: 50%; */
     height: auto;
 }
 
 footer img {
-    max-width: 17%
+    /* max-width: 17%; */
 }
 
 /* Responsive CSS for Jazzed-up Cards */
@@ -279,10 +332,10 @@ footer img {
 .card {
     width: calc(50% - 20px);
     /* max-width: 400px; */
-    background-color: #facb7b;
-    color: black;
+    background-color: #1c1c1c;
+    color: #facb7b;
     flex: 1 1 200px;
-    border: 1px solid #facb7b;
+    border: 1px solid;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
@@ -334,12 +387,29 @@ footer img {
     .ss-hidden {
         display: none;
     }
+
+    img {
+        max-width: 100%;
+    }
+
+    .footer-content {
+        display: ruby;
+    }
+
+    .footer-logo {
+        max-width: 100%;
+    }
+
+    .hot {
+        font-size: 1em;
+    }
 }
 
 .whitebg {
     /* background-color: #1e2021;
       color: whitesmoke; */
-    background: #2e2e2e;
+    color: black;
+    background: #facb7b;
     backdrop-filter: blur(10px);
     /* Applies blur effect to the background */
 }
@@ -447,7 +517,7 @@ hr {
 }
 
 strong {
-    color: #ff1200;
+    color: firebrick;
 }
 
 /* .is-bordered {
@@ -465,7 +535,7 @@ hr {
 }
 
 .hot {
-    color: #ff1200;
+    color: firebrick;
 }
 
 .gold {
@@ -504,10 +574,14 @@ hr {
 }
 
 .ash {
-    color: slategray;
+    color: gray;
 }
 
 .tweet {
     text-align: left !important;
     width: 95%
+}
+
+.card strong {
+    color: whitesmoke
 }
