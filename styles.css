@@ -7,6 +7,7 @@
 
 /* Body Styles */
 body {
+    /* text-shadow: 0 0 #332a2a; */
     font-family: 'Luckiest Guy', cursive;
     background-color: black;
     color: black;
@@ -319,7 +320,7 @@ img {
     }
 
     .about-content {
-        padding: 50px 24px;
+        padding: 15px;
     }
 
     .live-wrapper {
@@ -339,12 +340,24 @@ img {
     }
 
     img {
-        max-width: 100%;
+        max-width: 25%;
     }
 
-    .hot {
-        font-size: 1em;
+    .airdrop-section {
+        padding: 10px;
+        border-radius: 10px;
     }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+}
+
+
+.hot {
+    text-shadow: 0 0 #443d3b;
+    font-size: 1.7em;
+    color: firebrick;
 }
 
 .whitebg {
@@ -376,7 +389,6 @@ img {
 
 .card-header {
     padding: 10px;
-    color: #facb7b;
     text-align: center;
     background: black;
 }
@@ -472,10 +484,6 @@ hr {
     margin: 20px 0;
 }
 
-.hot {
-    color: firebrick;
-}
-
 .gold {
     color: #facb7b;
 }
@@ -526,4 +534,9 @@ hr {
 
 .airdrop h3 {
     text-align: left;
+}
+
+.airdrop-section {
+    padding: 20px;
+    border-radius: 10px;
 }
