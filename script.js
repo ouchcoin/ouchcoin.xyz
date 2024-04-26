@@ -58,14 +58,14 @@ function scrollToTop() {
 // Contract address
 var qr = new QRious({
     element: document.getElementById('qrcode'),
-    value: '0x218DcDc9B696FeA88cDEE7b68609298e1b2aA199', // URL or text you want to encode
+    value: '0x5B427Dbf83041BD006C40E4C34C7b196d8B3947F', // URL or text you want to encode
     size: 200 // Size of the QR code in pixels
 });
 
 // Airdrop account
 var qr2 = new QRious({
     element: document.getElementById('qrcode2'),
-    value: '0x35D60B687fb1E08bf6Adec81DFB1024026C7Ab5a', // URL or text you want to encode
+    value: '0x1266f7fc797d60C9BEE4537106D4675aE8eb6325', // URL or text you want to encode
     size: 200 // Size of the QR code in pixels
 });
 
