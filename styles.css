@@ -409,7 +409,7 @@ footer img {
     /* background-color: #1e2021;
       color: whitesmoke; */
     color: black;
-    background: #facb7b;
+    background: gray;
     backdrop-filter: blur(10px);
     /* Applies blur effect to the background */
 }
