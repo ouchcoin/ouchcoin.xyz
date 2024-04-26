@@ -124,55 +124,10 @@ section p {
 /* Footer Styles */
 footer {
     color: whitesmoke;
-    background-color: #1c1c1c; /* Gold background color */
     padding: 20px 0; /* Adjust padding as needed */
-}
-
-.footer-content {
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-    /* flex-wrap: wrap; */
-    max-width: 1080px;
-    margin: 0 auto;
-}
-
-.footer-text {
-    flex: 1;
-    max-width: 600px; /* Adjust text width */
-    padding: 50px;
-}
-
-.footer-logo {
-    flex: 1;
-    max-width: 200px; /* Adjust logo width */
-}
-
-.footer-bottom {
-    /* background-color: #ffd700; */ /* Same background color as footer */
-    padding: 50px;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-bottom p {
     text-align: center;
-    margin-bottom: 10px;
 }
 
-.footer-links {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.footer-links a {
-    color: whitesmoke;
-    text-decoration: none;
-    margin: 0 10px;
-}
 
 .social-media {
     text-align: center;
@@ -319,12 +274,8 @@ footer {
 
 /* CSS */
 img {
-    /* max-width: 50%; */
+    max-width: 25%;
     height: auto;
-}
-
-footer img {
-    /* max-width: 17%; */
 }
 
 /* Responsive CSS for Jazzed-up Cards */
@@ -343,7 +294,6 @@ footer img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     display: inline-flex;
-    min-height: 140px;
 
     /* Center contents */
     display: inline-flex;
@@ -389,14 +339,6 @@ footer img {
     }
 
     img {
-        max-width: 100%;
-    }
-
-    .footer-content {
-        display: ruby;
-    }
-
-    .footer-logo {
         max-width: 100%;
     }
 
@@ -516,10 +458,6 @@ hr {
     border-radius: 10px;
 }
 
-strong {
-    color: firebrick;
-}
-
 /* .is-bordered {
     padding: 50px;
     border: 2px solid black;
@@ -584,4 +522,8 @@ hr {
 
 .card strong {
     color: whitesmoke
+}
+
+.airdrop h3 {
+    text-align: left;
 }
