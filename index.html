@@ -12,7 +12,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.0.0-beta.40/dist/ethers.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/qrious"></script>
     <!-- <script src="./script.js"></script> -->
@@ -31,10 +31,15 @@
 
                 <li><a href="#contract">Contract</a></li>
                 <li><a href="#tryit">Try it</a></li>
-                <!-- <li><a href="#faq">FAQ</a></li> -->
-                <li><a href="#airdrop">Airdrop</a></li>
+                <li><a href="#distribution">Distribution</a></li>
+                <!-- <li><a href="#faq">FAQ</a></li>
+                <li><a href="#airdrop">Airdrop</a></li-->
             </ul>
         </nav>
+
+        <div class="pancake container tweet">
+            <a target="_blank" href="https://pancakeswap.finance/swap?outputCurrency=0x5B427Dbf83041BD006C40E4C34C7b196d8B3947F">PancakeSwap</a>
+        </div>
     </header>
 
     <!-- Main Section -->
@@ -79,7 +84,7 @@
                     <h2>🔥 ON FIRE 🔥</h2>
                 </div>
                 <div class="card-body">
-                    <p class="circulating-supply">420,690,000,000,000</p>
+                    <p id="totalSupply"></p>
                 </div>
             </div>
             <div class="count-card ash">
@@ -87,7 +92,7 @@
                     <h2 class="ash">⚱️ ASH ⚱️</h2>
                 </div>
                 <div class="card-body">
-                    <p class="burned-supply">0</p>
+                    <p class="burned-supply" id="totalCoinsBurned"></p>
                 </div>
             </div>
         </div>
@@ -278,7 +283,7 @@
                 </div>
             </section> -->
 
-            <section id="airdrop" class="section about">
+            <!-- <section id="airdrop" class="section about">
                 <div class="container glass-container text-shadow">
                     <div class="about-content airdrop">
                         <h2>🎉 Air Drop 🎉</h2>
@@ -355,14 +360,30 @@
 
                 </div>
 
-            </section>
+            </section> -->
 
+
+            <section id="distribution" class="section about">
+                <div class="container glass-container text-shadow">
+                    <div class="about-content">
+                        <h2>🎁 Distribution 🎁</h2>
+                        <br>
+                        <p>Disappointed by the lack of interest in our Airdrop, we've pivoted. The tokens reserved for Airdrop are now fueling our PancakeSwap liquidity pool.</p>
+                        <br>
+                        <p>Dev Fee: <strong>6.9420%</strong></p>
+                        <p>Liquidity Pool: <strong>93.058%</strong></p>
+                        <br>
+                        <p class="hot small">! Important ! Make sure you have the correct contract address before making any transactions.</p>
+                    </div>
+                    
+                </div>
             </section>
 
         </div>
         <!--  Footer Section -->
         <footer>
-            <h2 class="hot">Ownership will be relinquished upon completion of the Airdrop!</h2><br>
+            <h2 class="hot">Ownership renounced!</h2><br>
+            <h2 class="hot">LP tokens burned!</h2>
             <div class="container">
                 <img src="images/logo.png" alt="OuchCoin Logo">
             </div>

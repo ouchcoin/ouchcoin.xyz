@@ -62,7 +62,7 @@ nav li a {
     transition: background-color 0.3s, color 0.3s;
     padding: 12px 20px;
     /* Adjust padding for all screen sizes */
-    width: 120px;
+    width: 155px;
 }
 
 nav li a:hover {
@@ -539,4 +539,32 @@ hr {
 .airdrop-section {
     padding: 20px;
     border-radius: 10px;
+}
+
+.pancake {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    max-width: 210px;
+}
+
+.pancake p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.pancake a {
+    display: inline-block;
+    background-color: #d1884f;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pancake a:hover {
+    background-color: skyblue;
 }

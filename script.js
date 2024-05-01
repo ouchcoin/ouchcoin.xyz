@@ -85,3 +85,25 @@ if (isIOS) {
         }
     });
 }
+
+const contractAddress = '0x5B427Dbf83041BD006C40E4C34C7b196d8B3947F';
+const initialMint = 420690000000000; // Initial mint supply (in wei)
+
+// Fetch total supply
+fetch(`https://api.bscscan.com/api?module=stats&action=tokensupply&contractaddress=${contractAddress}`)
+    .then(response => response.json())
+    .then(data => {
+        const totalSupply = data.result;
+
+        // Calculate total coins burned
+        const totalCoinsBurned = initialMint - totalSupply;
+
+        // Format numbers into currency format
+        const formatter = new Intl.NumberFormat('en-US', {
+            style: 'decimal',
+        });
+
+        document.getElementById('totalSupply').innerText = formatter.format(totalSupply);
+        document.getElementById('totalCoinsBurned').innerText = formatter.format(totalCoinsBurned);
+    })
+    .catch(error => console.error('Error fetching total supply:', error));
