@@ -468,6 +468,7 @@ hr {
     /* background: rgba(250, 203, 123, 0.7); */
     backdrop-filter: blur(10px);
     border-radius: 10px;
+    color: whitesmoke
 }
 
 /* .is-bordered {
